@@ -7,52 +7,52 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css" media="screen">
   </head>
-  <body>
-    <header class="aaa">
-      <img src="./assets/eisenhower-matrix.jpg" alt="Eisenhower-matrix-scheme">
-      <a class="more_inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  <body class="body">
+    <header class="header">
+      <img class="header__image" src="./assets/eisenhower-matrix.jpg" alt="Eisenhower-matrix-scheme">
+      <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-      <section class="section" id="topSectionForAddingElementToList">
-        <h3 for="new-task">Add Item</h3>
-        <div class="task-row-wrapper">
-          <input id="new-task"class="task" type="text">
-          <button>Add</button>
+      <section class="section add-todo" id="topSectionForAddingElementToList">
+        <h3 class="section__header add-todo__header">Add Item</h3>
+        <div class="add-todo__wrapper">
+          <input class="section__input add-todo__input" type="text">
+          <button class="section__button add-todo__button">Add</button>
         </div>
       </section>
-      <section class="section">
-        <h3>Todo</h3>
-        <ul id="incompleteTasks">
-          <li>
-            <input type="checkbox">
-            <label class="task">Pay Bills</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./assets/remove.svg" alt="Remove-button">
+      <section class="section incomplete-todo">
+        <h3 class="section__header">Todo</h3>
+        <ul class="section__todo-list section__todo-list_incomplete">
+          <li class="section__todo-list-item">
+            <input class="section__input section__input_checkbox" type="checkbox">
+            <label class="section__label">Pay Bills</label>
+            <input class="section__input section__input_text" type="text">
+            <button class="section__button section__button_edit">Edit</button>
+            <button class="section__button section__button_delete">
+              <img class="section__button-img" src="./assets/remove.svg" alt="Remove-button">
             </button>
           </li>
-          <li class="editMode">
-            <input type="checkbox">
-            <label class="task">Go Shopping</label>
-            <input type="text" value="Go Shopping" class="task">
-            <button class="edit">Save</button>
-            <button class="delete">
-              <img src="./assets/remove.svg" alt="Remove-button">
+          <li class="section__todo-list-item section__todo-list-item_edit">
+            <input class="section__input section__input_checkbox" type="checkbox">
+            <label class="section__label">Go Shopping</label>
+            <input class="section__input section__input_text" type="text" value="Go Shopping">
+            <button class="section__button section__button_edit">Save</button>
+            <button class="section__button section__button_delete">
+              <img class="section__button-img" src="./assets/remove.svg" alt="Remove-button">
             </button>
           </li>
         </ul>
       </section>
-      <section class="section">
-        <h3>Completed</h3>
-        <ul id="completed-tasks">
-          <li>
-            <input type="checkbox" checked>
-            <label class="task">See the Doctor</label>
-            <input type="text" class="task">
-            <button class="edit">Edit</button>
-            <button class="delete">
-              <img src="./assets/remove.svg" alt="Remove-button">
+      <section class="section complete-todo">
+        <h3 class="section__header">Completed</h3>
+        <ul class="section__todo-list section__todo-list_complete">
+          <li class="section__todo-list-item">
+            <input class="section__input section__input_checkbox" type="checkbox" checked>
+            <label class="section__label">See the Doctor</label>
+            <input class="section__input section__input_text" type="text">
+            <button class="section__button section__button_edit">Edit</button>
+            <button class="section__button section__button_delete">
+              <img class="section__button-img" src="./assets/remove.svg" alt="Remove-button">
             </button>
           </li>
         </ul>
